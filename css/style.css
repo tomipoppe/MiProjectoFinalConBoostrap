@@ -88,6 +88,12 @@ a.nav-link:hover{
     margin: 0 45px;
 }
 
+/* BANNER */
+
+.bannerIndex{
+    margin: 30px auto;
+}
+
 /* FOOTER */
 .social{
     text-align: center;
@@ -127,4 +133,12 @@ h2{
     font-size: 18px;
     padding: 10px;
     margin: 10px;
+}
+
+/* ABOUT US */
+
+.medidasAbout{
+    width: 100%;
+    height: 700px;
+    object-fit: cover
 }
