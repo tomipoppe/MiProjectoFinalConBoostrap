@@ -1,0 +1,110 @@
+body{
+    background-color: #fddce6;
+}
+
+.header{
+    padding-top: 20px;
+
+}
+
+.logo{
+    margin: auto;
+    display: flex;
+}
+/* NAVBAR */
+.navbar-nav{
+    margin: 0 auto;
+}
+
+.navbar-light .navbar-toggler{
+    background-color: pink;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: pink;
+    margin-left: 50px;
+}
+
+a.nav-link{
+    font-size: 18px;
+    color: rgb(250, 155, 171);
+    font-weight: bold;
+}
+a.nav-link:hover{
+    border-bottom: 3px solid white;
+}
+
+/* CAROUSEL */
+
+.carousel-inner{
+    width: 90vw;
+    height: 50vh;
+}
+
+/* WAPP */
+
+.fa-whatsapp {
+    font-size: 90px;
+    color: #008000;
+}
+
+.fixed{
+    position: fixed;
+    right: 5px;
+    z-index: 1;
+    bottom: 20px;
+}
+
+.fixed:hover{
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border-radius: 50%;
+    right: 40px;
+}
+
+/* MAIN */
+.images{
+    margin: 10px;
+}
+
+/* FOOTER */
+.social{
+    text-align: center;
+    font-size: 20px;
+}
+
+.social i{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social p{
+    margin-bottom: 5px;
+}
+
+footer{
+    text-align: center;
+}
+
+hr{
+    border-width: thin;
+    border-color: black;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: #BC8158;
+    font-size: 30px;
+    text-decoration: underline 1px;
+    padding: 15px;
+
+}
+
+.text{
+    background: rgba(232, 184, 120, 0.436);
+    color: grey;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+}
