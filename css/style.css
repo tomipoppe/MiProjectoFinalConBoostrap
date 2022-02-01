@@ -21,24 +21,44 @@ body{
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: pink;
+    color: rgb(252, 159, 175);
     margin-left: 50px;
 }
 
 a.nav-link{
     font-size: 18px;
-    color: rgb(250, 155, 171);
+    color: rgb(242, 123, 143);
     font-weight: bold;
 }
 a.nav-link:hover{
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
 }
 
 /* CAROUSEL */
 
-.carousel-inner{
-    width: 90vw;
-    height: 50vh;
+.carousel-inner {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.medidas{
+    width: 100%;
+    height: 300px;
+    object-fit: cover
+}
+
+/* Para laptop */
+@media (min-width: 1025px){
+.medidas{
+    width: 1300px;
+    height: 450px;
+}
+.carousel-inner {
+    width: 100%;
+}
+}
+.carousel{
+    margin-top: 20px;
 }
 
 /* WAPP */
@@ -60,12 +80,12 @@ a.nav-link:hover{
     background-color: green;
     padding: 15px;
     border-radius: 50%;
-    right: 40px;
+    right: 20px;
 }
 
 /* MAIN */
 .images{
-    margin: 10px;
+    margin: 0 45px;
 }
 
 /* FOOTER */
