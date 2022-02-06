@@ -1,0 +1,21 @@
+.navbar-nav{
+    margin: 0 auto;
+}
+
+.navbar-light .navbar-toggler{
+    background-color: pink;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(252, 159, 175);
+    margin-left: 50px;
+}
+
+a.nav-link{
+    font-size: 2rem;
+    color: rgb(242, 123, 143);
+    font-weight: bold;
+}
+a.nav-link:hover{
+    border-bottom: 2px solid white;
+}

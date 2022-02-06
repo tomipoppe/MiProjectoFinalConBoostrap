@@ -1,0 +1,19 @@
+.fa-whatsapp {
+    font-size: 90px;
+    color: #008000;
+}
+
+.fixed{
+    position: fixed;
+    right: 5px;
+    z-index: 1;
+    bottom: 20px;
+}
+
+.fixed:hover{
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border-radius: 50%;
+    right: 20px;
+}

@@ -1,0 +1,36 @@
+// CAROUSEL 
+.carousel-inner {
+    width: 93%;
+    margin: 0 auto;
+    .medidas{
+        width: 100%;
+        height: 300px;
+        object-fit: cover
+    }
+}
+
+
+
+/* Para laptop */
+@media (min-width: 1025px){
+
+    .carousel{
+        margin-top: 20px;
+    }
+    .carousel-inner {
+        width: 100%;
+        .medidas{
+            width: 100%;
+            height: 450px;
+        }
+    }
+}
+
+// BANNER
+.bannerIndex{
+    margin: 30px auto;
+}
+
+.images{
+    margin: 0 45px;
+}
