@@ -1,3 +1,22 @@
+//BODY-HEADER
+body{
+    background-color: $rosa;
+    margin: 0;
+    .header{
+        padding-top: 20px;
+        .logo{
+            margin: auto;
+            display: flex;
+        }
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+    transform: scale(1.2);
+}
+    }
+}
+
+//FOOTER
 .social{
     text-align: center;
     font-size: 20px;
