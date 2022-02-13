@@ -1,5 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 //UTILITIES
 @import './utilities/colors';
+@import './utilities/tipografias';
+@import './utilities/mixin';
 
 //SECTIONS
 @import './sections/index';
@@ -8,6 +16,6 @@
 
 //COMPONENTS
 @import './components/navbar';
-@import './components/footer-header';
+@import './components/body-header-footer';
 @import './components/wapp';
 

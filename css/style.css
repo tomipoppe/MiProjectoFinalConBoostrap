@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .carousel-inner {
   width: 93%;
   margin: 0 auto; }
@@ -69,37 +74,41 @@ a.nav-link {
   right: 0; }
 
 body {
-  background-color: #fddce6;
-  margin: 0; }
+  background-color: #fddce6; }
   body .header {
     padding-top: 20px; }
     body .header .logo {
       margin: auto;
       display: flex; }
-    body .header .hvr-grow:hover, body .header .hvr-grow:focus, body .header .hvr-grow:active {
+    body .header .hvr-grow:hover,
+    body .header .hvr-grow:focus,
+    body .header .hvr-grow:active {
       transform: scale(1.2); }
-
-footer {
-  text-align: center; }
-  footer hr {
-    border-width: thin;
-    border-color: black;
-    margin-bottom: 10px; }
-  footer .social {
-    font-size: 20px; }
-    footer .social a {
-      font-size: 20px;
+  body footer {
+    text-align: center; }
+    body footer hr {
+      border-width: thin;
+      border-color: black;
+      margin-bottom: 10px; }
+    body footer .social div.links {
+      margin-bottom: 15px; }
+    body footer .social .footerTextSocial {
+      font-family: sans-serif;
+      font-size: 1.3rem;
+      color: black; }
+    body footer .social a {
+      font-size: 30px;
       margin-bottom: 20px;
       color: #949494;
       text-decoration: none;
       padding-left: 5px; }
-    footer .social .hvr-icon-bounce {
+    body footer .social .hvr-icon-bounce {
       -webkit-transform: perspective(1px) translateZ(0);
       transform: perspective(1px) translateZ(0);
       box-shadow: 0 0 1px rgba(0, 0, 0, 0);
       -webkit-transition-duration: 0.3s;
       transition-duration: 0.3s; }
-    footer .social .hvr-icon-bounce .hvr-icon {
+    body footer .social .hvr-icon-bounce .hvr-icon {
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
       -webkit-transition-duration: 0.3s;
@@ -108,13 +117,19 @@ footer {
       transition-property: transform;
       -webkit-transition-timing-function: ease-out;
       transition-timing-function: ease-out; }
-    footer .social .hvr-icon-bounce:hover .hvr-icon, footer .social .hvr-icon-bounce:focus .hvr-icon, footer .social .hvr-icon-bounce:active .hvr-icon {
+    body footer .social .hvr-icon-bounce:hover .hvr-icon,
+    body footer .social .hvr-icon-bounce:focus .hvr-icon,
+    body footer .social .hvr-icon-bounce:active .hvr-icon {
       -webkit-transform: scale(1.5);
       transform: scale(1.5);
       -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
       transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36); }
-    footer .social .footerText {
+    body footer .footerText {
       margin-bottom: 3px; }
+    body footer .footerText {
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      color: black; }
 
 .fa-whatsapp {
   font-size: 90px;

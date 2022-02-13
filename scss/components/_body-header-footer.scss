@@ -1,0 +1,86 @@
+//BODY
+body {
+    background-color: $rosa;
+    
+    //HEADER
+    .header {
+        padding-top: 20px;
+
+        .logo {
+            margin: auto;
+            display: flex;
+        }
+
+        .hvr-grow:hover,
+        .hvr-grow:focus,
+        .hvr-grow:active {
+            transform: scale(1.2);
+        }
+    }
+
+    //FOOTER
+    footer {
+        text-align: center;
+
+        hr {
+            border-width: thin;
+            border-color: black;
+            margin-bottom: 10px;
+        }
+
+        .social {
+            div.links {
+                margin-bottom: 15px;
+            }
+
+            .footerTextSocial {
+                @include parrafoStyle ($sans-serif, 1.3rem, black)
+            }
+
+            a {
+                font-size: 30px;
+                margin-bottom: 20px;
+                color: rgb(148, 148, 148);
+                text-decoration: none;
+                padding-left: 5px;
+            }
+
+            //BOUNCE A LAS REDES
+            .hvr-icon-bounce {
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+            }
+
+            .hvr-icon-bounce .hvr-icon {
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+
+            .hvr-icon-bounce:hover .hvr-icon,
+            .hvr-icon-bounce:focus .hvr-icon,
+            .hvr-icon-bounce:active .hvr-icon {
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+                -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+                transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+            }
+        }
+
+        .footerText {
+            margin-bottom: 3px;
+        }
+
+        .footerText {
+            @include parrafoStyle ($sans-serif, 0.8rem, black);
+        }
+    }
+}
