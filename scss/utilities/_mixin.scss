@@ -3,3 +3,10 @@
     font-size: $tamanio-letra;
     color: $color;
 }
+
+@mixin encabazados ($sans-serif, $tamanio-letra, $titulos, $text-align) {
+    font-family: $sans-serif;
+    font-size: $tamanio-letra;
+    color: $titulos;
+    text-align: center;
+}
