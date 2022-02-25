@@ -1,4 +1,13 @@
-
+//TITULO
+.section-title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    font: 300 40px 'Oswald', sans-serif;
+    color: $text;
+    text-transform: uppercase;
+    letter-spacing: 6px;}
+  
 // CAROUSEL 
 .carousel-inner {
     width: 93%;
@@ -9,7 +18,6 @@
         object-fit: cover
     }
 }
-
 
 /* Para laptop */
 @media (min-width: 1025px){

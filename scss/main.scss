@@ -9,14 +9,15 @@
 @import './utilities/tipografias';
 @import './utilities/mixin';
 
-//SECTIONS
-@import './sections/index';
-@import './sections/ourProjects';
-@import './sections/aboutUs';
-
 //COMPONENTS
 @import './components/navbar';
 @import './components/body-header-footer';
 @import './components/wapp';
-@import './components/titulo';
+
+//SECTIONS
+@import './sections/index';
+@import './sections/ourProjects';
+@import './sections/aboutUs';
+@import './sections/contact';
+
 
