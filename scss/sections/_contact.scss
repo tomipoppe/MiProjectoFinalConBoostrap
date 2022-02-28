@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: $rosa;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 #contact {
@@ -182,17 +182,17 @@ hr {
 .contact-wrapper {
     display: flex;
     flex-direction: row;
-    min-width: 600px;
+    justify-content: center;
 }
+.form-control, textarea {
+max-width: 600px;
+width: 350px;
+}
+
 .direct-contact-container , .form-horizontal {
-    margin: 0 auto;
-    min-width: 300px;
     margin-left: 30px;
 }
 
-.contact-list{
-    padding-right: 10px;
-}
 .contact-text {
     font: 300 15px 'Lato', sans-serif;    
 }
@@ -215,53 +215,50 @@ ol, ul {
 
 .send-button {
     height: 34px;
-    width: 300px;
+    width: 350px;
 }
 
 .alt-send-button {
-    width: 280px;
+    width: 320px;
     height: 34px;
 }
 .fa-paper-plane{
     align-items: center;
 }
+
+.copyright{
+    font: 200 11px 'Oswald', sans-serif;
+}
 }
 
-@media (min-width: 1024px) {
-    .contact-wrapper {
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
+@media (min-width: 1440px) {    
+    body{
+        padding-bottom: 20px;
     }
-    .direct-contact-container , .form-horizontal {
-        min-width: 500px;
-        margin-left: 30px;
-    }
-    
+
     .contact-text {
         font: 300 20px 'Lato', sans-serif;
-        
     }
      
-    .form-control,
-    textarea {
+    .form-control, textarea {
     max-width: 800px;
-    width: 450px;
-    background-color: #fddce6;
-    color: $text;
-    letter-spacing: 1px;
+    width: 550px;
     }
 
     .send-button {
         height: 34px;
-        width: 400px;
+        width: 550px;
     }
     
     .alt-send-button {
-        width: 320px;
+        width: 520px;
         height: 34px;
     }
     .fa-paper-plane{
         align-items: center;
+    }
+
+    .copyright{
+        font: 200 14px 'Oswald', sans-serif;
     }
     }
