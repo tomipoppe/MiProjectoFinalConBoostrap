@@ -34,20 +34,20 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0; }
-  body .social-media-list li a {
-    color: #fff; }
-  body .social-media-list li {
-    position: relative;
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 10px 3px;
-    line-height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: #fc9faf;
-    cursor: pointer;
-    transition: all .2s ease-in-out; }
+    body .social-media-list li {
+      position: relative;
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      margin: 10px 3px;
+      line-height: 60px;
+      border-radius: 50%;
+      color: #fff;
+      background-color: #fc9faf;
+      cursor: pointer;
+      transition: all .2s ease-in-out; }
+      body .social-media-list li a {
+        color: #fff; }
   body .social-media-list li:after {
     content: '';
     position: absolute;
@@ -62,12 +62,12 @@ body {
     transition: all .2s ease-in-out; }
   body .social-media-list li:hover {
     background-color: #fff; }
+    body .social-media-list li:hover a {
+      color: #000; }
   body .social-media-list li:hover:after {
     opacity: 1;
     transform: scale(1.12);
     transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65); }
-  body .social-media-list li:hover a {
-    color: #000; }
   body .copyright {
     font: 200 14px 'Oswald', sans-serif;
     color: #555;
@@ -225,8 +225,7 @@ body {
 .form-group {
   margin-bottom: 10px; }
 
-.form-control,
-textarea {
+.form-control, textarea {
   max-width: 410px;
   background-color: #fddce6;
   color: #fc9faf;

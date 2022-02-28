@@ -38,6 +38,7 @@ body {
     hr {
         border-color: #ffffff99;
     }
+
     /* Social Media Icons */
     .social-media-list {
         position: relative;
@@ -46,25 +47,26 @@ body {
         width: 100%;
         margin: 0 auto;
         padding: 0;
+
+        li {
+            position: relative;
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            margin: 10px 3px;
+            line-height: 60px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #fc9faf;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            a {
+                color: #fff;
+            }
+        }
     }
 
-    .social-media-list li a {
-        color: #fff;
-    }
-
-    .social-media-list li {
-        position: relative;
-        display: inline-block;
-        height: 60px;
-        width: 60px;
-        margin: 10px 3px;
-        line-height: 60px;
-        border-radius: 50%;
-        color: #fff;
-        background-color: #fc9faf;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
-    }
 
     .social-media-list li:after {
         content: '';
@@ -82,16 +84,16 @@ body {
 
     .social-media-list li:hover {
         background-color: #fff;
+
+        a {
+            color: #000;
+        }
     }
 
     .social-media-list li:hover:after {
         opacity: 1;
         transform: scale(1.12);
         transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-    }
-
-    .social-media-list li:hover a {
-        color: #000;
     }
 
     .copyright {
