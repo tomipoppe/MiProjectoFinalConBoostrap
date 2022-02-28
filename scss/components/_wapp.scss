@@ -1,26 +1,35 @@
 .whatsapp {
-    position:fixed;
-    width:55px;
-    height:55px;
-    bottom:20px;
-    right:10px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-    text-decoration: none;
-  }
-  
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 10px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  box-shadow: 2px 2px 3px #999;
+  text-decoration: none;
+
   .whatsapp-icon {
-    margin-top:13px;
+    margin-top: 13px;
   }
-  
+}
+
 @media (min-width: 768px) {
   .whatsapp {
-    width:60px;
-    height:60px;
-    font-size:35px;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .whatsapp {
+    width: 70px;
+    height: 70px;
+    font-size: 45px;
   }
 }

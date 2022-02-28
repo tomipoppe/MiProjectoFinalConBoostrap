@@ -2,7 +2,7 @@
 .section-title {
     text-align: center;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
     font: 300 40px 'Oswald', sans-serif;
     color: $text;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
 }
 
 /* Para laptop */
-@media (min-width: 1025px){
+@media (min-width: 1440px){
 
     .carousel{
         margin-top: 20px;

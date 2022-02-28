@@ -1,7 +1,7 @@
 //BODY
 body {
     background-color: $rosa;
-    
+
     //HEADER
     .header {
         padding-top: 20px;
@@ -9,6 +9,8 @@ body {
         .logo {
             margin: auto;
             display: flex;
+            height: 120px;
+            width: 120px;
         }
 
         .hvr-grow:hover,
@@ -16,71 +18,85 @@ body {
         .hvr-grow:active {
             transform: scale(1.2);
         }
+
+        @media (min-width: 768px) {
+            .logo {
+                height: 160px;
+                width: 160px;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .logo {
+                height: 200px;
+                width: 200px;
+            }
+        }
     }
 
     //FOOTER
-    footer {
+    hr {
+        border-color: #ffffff99;
+    }
+    /* Social Media Icons */
+    .social-media-list {
+        position: relative;
+        font-size: 22px;
         text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
 
-        hr {
-            border-width: thin;
-            border-color: black;
-            margin-bottom: 10px;
-        }
+    .social-media-list li a {
+        color: #fff;
+    }
 
-        .social {
-            div.links {
-                margin-bottom: 15px;
-            }
+    .social-media-list li {
+        position: relative;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        margin: 10px 3px;
+        line-height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #fc9faf;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
 
-            .footerTextSocial {
-                @include parrafoStyle ($sans-serif, 1.3rem, black)
-            }
+    .social-media-list li:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        opacity: 0;
+        box-shadow: 0 0 0 1px #fff;
+        transition: all .2s ease-in-out;
+    }
 
-            a {
-                font-size: 30px;
-                margin-bottom: 20px;
-                color: rgb(148, 148, 148);
-                text-decoration: none;
-                padding-left: 5px;
-            }
+    .social-media-list li:hover {
+        background-color: #fff;
+    }
 
-            //BOUNCE A LAS REDES
-            .hvr-icon-bounce {
-                -webkit-transform: perspective(1px) translateZ(0);
-                transform: perspective(1px) translateZ(0);
-                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-                -webkit-transition-duration: 0.3s;
-                transition-duration: 0.3s;
-            }
+    .social-media-list li:hover:after {
+        opacity: 1;
+        transform: scale(1.12);
+        transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+    }
 
-            .hvr-icon-bounce .hvr-icon {
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-                -webkit-transition-duration: 0.3s;
-                transition-duration: 0.3s;
-                -webkit-transition-property: transform;
-                transition-property: transform;
-                -webkit-transition-timing-function: ease-out;
-                transition-timing-function: ease-out;
-            }
+    .social-media-list li:hover a {
+        color: #000;
+    }
 
-            .hvr-icon-bounce:hover .hvr-icon,
-            .hvr-icon-bounce:focus .hvr-icon,
-            .hvr-icon-bounce:active .hvr-icon {
-                -webkit-transform: scale(1.5);
-                transform: scale(1.5);
-                -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-                transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-            }
-        }
-
-        .footerText {
-            margin-bottom: 3px;
-        }
-
-        .footerText {
-            @include parrafoStyle ($sans-serif, 0.8rem, black);
-        }
+    .copyright {
+        font: 200 14px 'Oswald', sans-serif;
+        color: #555;
+        text-align: center;
     }
 }

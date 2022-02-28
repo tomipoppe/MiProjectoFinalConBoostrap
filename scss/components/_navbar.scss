@@ -43,3 +43,9 @@ a.nav-link{
   .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
   }
+
+  @media (min-width: 1440px) {
+    a.nav-link{
+      font-size: 25px;
+    }  
+  }
