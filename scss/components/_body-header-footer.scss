@@ -32,6 +32,13 @@ body {
                 width: 200px;
             }
         }
+
+        @media (min-width: 2560px) {
+            .logo {
+                height: 300px;
+                width: 300px;
+            }
+        }
     }
 
     //FOOTER
@@ -100,5 +107,22 @@ body {
         font: 200 14px 'Oswald', sans-serif;
         color: #555;
         text-align: center;
+    }
+
+    @media (min-width: 2560px) {
+        .social-media-list {
+            font-size: 45px;
+        
+            li {
+                height: 80px;
+                width: 80px;
+                margin: 10px 3px;
+                line-height: 60px;
+                border-radius: 50%;
+            }
+        }
+        .copyright {
+            font: 200 25px 'Oswald', sans-serif;
+        }    
     }
 }

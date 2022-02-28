@@ -9,6 +9,12 @@
     letter-spacing: 6px;
 }
 
+@media (min-width: 2560px) {
+    .section-title {
+        font: 300 95px 'Oswald', sans-serif;
+    }
+}
+
 // CAROUSEL 
 .carousel-inner {
     width: 93%;
@@ -38,6 +44,26 @@
     }
 }
 
+@media (min-width: 2560px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 2300px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+
+        .medidas {
+            height: 650px;
+        }
+    }
+}
+
 // CARDS
 
 /* Grow */
@@ -51,7 +77,9 @@
     transition-property: transform;
 }
 
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }

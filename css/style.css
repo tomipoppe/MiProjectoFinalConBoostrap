@@ -25,6 +25,10 @@ body {
       body .header .logo {
         height: 200px;
         width: 200px; } }
+    @media (min-width: 2560px) {
+      body .header .logo {
+        height: 300px;
+        width: 300px; } }
   body hr {
     border-color: #ffffff99; }
   body .social-media-list {
@@ -72,6 +76,17 @@ body {
     font: 200 14px 'Oswald', sans-serif;
     color: #555;
     text-align: center; }
+  @media (min-width: 2560px) {
+    body .social-media-list {
+      font-size: 45px; }
+      body .social-media-list li {
+        height: 80px;
+        width: 80px;
+        margin: 10px 3px;
+        line-height: 60px;
+        border-radius: 50%; }
+    body .copyright {
+      font: 200 25px 'Oswald', sans-serif; } }
 
 .navbar-nav {
   margin: 0 auto; }
@@ -111,12 +126,18 @@ a.nav-link {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
   right: 0; }
 
 @media (min-width: 1440px) {
   a.nav-link {
     font-size: 25px; } }
+
+@media (min-width: 2560px) {
+  a.nav-link {
+    font-size: 45px; } }
 
 .whatsapp {
   position: fixed;
@@ -156,6 +177,10 @@ a.nav-link {
   text-transform: uppercase;
   letter-spacing: 6px; }
 
+@media (min-width: 2560px) {
+  .section-title {
+    font: 300 95px 'Oswald', sans-serif; } }
+
 .carousel-inner {
   width: 93%;
   margin: 0 auto; }
@@ -174,6 +199,19 @@ a.nav-link {
       width: 100%;
       height: 450px; } }
 
+@media (min-width: 2560px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 2300px; }
+  .carousel-inner {
+    width: 100%; }
+    .carousel-inner .medidas {
+      height: 650px; } }
+
 /* Grow */
 .hvr-grow {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -184,7 +222,9 @@ a.nav-link {
   -webkit-transition-property: transform;
   transition-property: transform; }
 
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
