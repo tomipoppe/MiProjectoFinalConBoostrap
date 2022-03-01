@@ -78,11 +78,11 @@ body {
     text-align: center; }
   @media (min-width: 2560px) {
     body .social-media-list {
-      font-size: 45px; }
+      font-size: 40px; }
       body .social-media-list li {
-        height: 80px;
-        width: 80px;
-        margin: 10px 3px;
+        height: 68px;
+        width: 68px;
+        margin: 10px 8px;
         line-height: 60px;
         border-radius: 50%; }
     body .copyright {
