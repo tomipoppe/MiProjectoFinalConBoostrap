@@ -25,11 +25,12 @@ body {
     font-weight: 400;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 10px;
 }
 
-.form-control, textarea {
+.form-control,
+textarea {
     max-width: 410px;
     background-color: #fddce6;
     color: $text;
@@ -94,7 +95,7 @@ body {
     margin-left: 30px;
 }
 
- .gmail {
+.gmail {
     margin-left: 30px;
 }
 
@@ -111,86 +112,119 @@ body {
 
 /* Begin Media Queries*/
 @media (min-width: 768px) {
-.contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.form-control, textarea {
-max-width: 600px;
-width: 350px;
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form-control,
+    textarea {
+        max-width: 600px;
+        width: 350px;
+    }
+
+    .direct-contact-container,
+    .form-horizontal {
+        margin-left: 30px;
+    }
+
+    .contact-text {
+        font: 300 15px 'Lato', sans-serif;
+    }
+
+    ol,
+    ul {
+        padding-left: 0;
+    }
+
+    .place {
+        margin-left: 40px;
+    }
+
+    .phone {
+        margin-left: 30px;
+    }
+
+    .gmail {
+        margin-left: 30px;
+    }
+
+    .send-button {
+        height: 34px;
+        width: 350px;
+    }
+
+    .alt-send-button {
+        width: 320px;
+        height: 34px;
+    }
+
+    .fa-paper-plane {
+        align-items: center;
+    }
+
+    .copyright {
+        font: 200 11px 'Oswald', sans-serif;
+    }
 }
 
-.direct-contact-container , .form-horizontal {
-    margin-left: 30px;
-}
-
-.contact-text {
-    font: 300 15px 'Lato', sans-serif;    
-}
-
-ol, ul {
-    padding-left: 0;
-}
-
-.place {
-    margin-left: 40px;
-}
-
-.phone {
-    margin-left: 30px;
-}
-
- .gmail {
-    margin-left: 30px;
-}
-
-.send-button {
-    height: 34px;
-    width: 350px;
-}
-
-.alt-send-button {
-    width: 320px;
-    height: 34px;
-}
-.fa-paper-plane{
-    align-items: center;
-}
-
-.copyright{
-    font: 200 11px 'Oswald', sans-serif;
-}
-}
-
-@media (min-width: 1440px) {    
-    body{
+@media (min-width: 1440px) {
+    body {
         padding-bottom: 20px;
     }
 
     .contact-text {
         font: 300 20px 'Lato', sans-serif;
     }
-     
-    .form-control, textarea {
-    max-width: 800px;
-    width: 550px;
+
+    .form-control,
+    textarea {
+        max-width: 800px;
+        width: 550px;
     }
 
     .send-button {
         height: 34px;
         width: 550px;
     }
-    
+
     .alt-send-button {
         width: 520px;
         height: 34px;
     }
-    .fa-paper-plane{
+
+    .fa-paper-plane {
         align-items: center;
     }
 
-    .copyright{
+    .copyright {
         font: 200 14px 'Oswald', sans-serif;
     }
+}
+
+@media (min-width: 2000px) {
+    .contact-text {
+        font: 300 35px 'Lato', sans-serif;
     }
+
+    .form-control,
+    textarea {
+        max-width: 1000px;
+        width: 750px;
+    }
+
+    .send-button {
+        height: 34px;
+        width: 750px;
+    }
+
+    .alt-send-button {
+        width: 720px;
+        height: 34px;
+    }
+
+   //BUCAR COMO MODIFICAR EL TAMAÑO DEL PLACEHOLDER EN ESTE TAMAÑO
+
+
+}

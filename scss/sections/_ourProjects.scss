@@ -1,0 +1,33 @@
+.card {
+    padding: 1rem;
+    background-color: $rosa;
+    border: none;
+}
+
+.cards {
+    max-width: 2300px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* Screen larger than 600px 2 column */
+@media (min-width: 426px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Screen larger than 900px 3 columns */
+@media (min-width: 580px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Screen larger than 1500px 3 columns */
+@media (min-width: 1025px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

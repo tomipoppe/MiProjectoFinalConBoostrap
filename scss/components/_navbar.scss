@@ -8,13 +8,21 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: #fc9faf;
-  margin-left: 50px;
+  margin-right: 50px;
 }
 
 a.nav-link {
   font-size: 18px;
-  color: rgb(242, 123, 143);
   font-weight: bold;
+}
+
+//DROPDOWN
+.dropdown-menu{
+  background-color: $rosa;
+  color: $text;
+}
+.dropdown-item{
+  color: $text;
 }
 
 .hvr-underline-from-left {
@@ -58,4 +66,7 @@ a.nav-link {
   a.nav-link {
     font-size: 45px;
   }
+  .dropdown-menu{
+    font-size: 2rem;
+  }  
 }
