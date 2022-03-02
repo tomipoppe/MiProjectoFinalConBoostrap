@@ -13,6 +13,7 @@ body {
 .contact-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     position: relative;
     min-width: 400px;
@@ -22,7 +23,7 @@ body {
 .form-horizontal {
     /*float: left;*/
     font-family: 'Lato';
-    font-weight: 400;
+    font-weight: 450;
 }
 
 .form-group {
@@ -31,7 +32,8 @@ body {
 
 .form-control,
 textarea {
-    max-width: 410px;
+    max-width: 425px;
+    width: 400px;
     background-color: #fddce6;
     color: $text;
     letter-spacing: 1px;
@@ -115,13 +117,27 @@ textarea {
     .contact-wrapper {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        min-width: 750px;
     }
 
     .form-control,
     textarea {
-        max-width: 600px;
+        max-width: 768px;
         width: 350px;
+    }
+
+    .send-button {
+        height: 34px;
+        width: 350px;
+    }
+
+    .alt-send-button {
+        width: 320px;
+        height: 34px;
+    }
+
+    .fa-paper-plane {
+        align-items: center;
     }
 
     .direct-contact-container,
@@ -150,20 +166,6 @@ textarea {
         margin-left: 30px;
     }
 
-    .send-button {
-        height: 34px;
-        width: 350px;
-    }
-
-    .alt-send-button {
-        width: 320px;
-        height: 34px;
-    }
-
-    .fa-paper-plane {
-        align-items: center;
-    }
-
     .copyright {
         font: 200 11px 'Oswald', sans-serif;
     }
@@ -174,6 +176,10 @@ textarea {
         padding-bottom: 20px;
     }
 
+    .contact-wrapper {
+        min-width: 1300px;
+    }
+
     .contact-text {
         font: 300 20px 'Lato', sans-serif;
     }
@@ -181,16 +187,16 @@ textarea {
     .form-control,
     textarea {
         max-width: 800px;
-        width: 550px;
+        width: 650px;
     }
 
     .send-button {
         height: 34px;
-        width: 550px;
+        width: 650px;
     }
 
     .alt-send-button {
-        width: 520px;
+        width: 620px;
         height: 34px;
     }
 
@@ -203,24 +209,28 @@ textarea {
     }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 2560px) {
     .contact-text {
         font: 300 35px 'Lato', sans-serif;
     }
 
+    .contact-wrapper {
+        min-width: 1900px;
+    }
+    
     .form-control,
     textarea {
-        max-width: 1000px;
-        width: 750px;
+        max-width: 2300px;
+        width: 1000px;
     }
 
     .send-button {
         height: 34px;
-        width: 750px;
+        width: 1000px;
     }
 
     .alt-send-button {
-        width: 720px;
+        width: 980px;
         height: 34px;
     }
 

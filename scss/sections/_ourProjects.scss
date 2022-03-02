@@ -1,6 +1,5 @@
 .card {
-    padding: 1rem;
-    background-color: $rosa;
+    padding: 0.3rem;
     border: none;
 }
 
@@ -8,8 +7,25 @@
     max-width: 2300px;
     margin: 0 auto;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
 }
+
+.hvr-grow-shadow {
+    // display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(10px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+  }
+  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+    box-shadow: 0 25px 25px -5px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
 /* Screen larger than 600px 2 column */
 @media (min-width: 426px) {
