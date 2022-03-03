@@ -188,15 +188,11 @@ a.nav-link {
 .section-title {
   text-align: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
   font: 300 40px 'Oswald', sans-serif;
   color: #fc9faf;
   text-transform: uppercase;
   letter-spacing: 6px; }
-
-@media (min-width: 2560px) {
-  .section-title {
-    font: 300 95px 'Oswald', sans-serif; } }
 
 .carousel-inner {
   width: 93%;
@@ -207,14 +203,14 @@ a.nav-link {
     object-fit: cover; }
 
 /* Para laptop */
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
   .carousel {
     margin-top: 20px; }
   .carousel-inner {
     width: 100%; }
     .carousel-inner .medidas {
       width: 100%;
-      height: 450px; } }
+      height: 380px; } }
 
 @media (min-width: 2560px) {
   .container,
@@ -227,7 +223,9 @@ a.nav-link {
   .carousel-inner {
     width: 100%; }
     .carousel-inner .medidas {
-      height: 650px; } }
+      height: 750px; }
+  .section-title {
+    font: 300 95px 'Oswald', sans-serif; } }
 
 /* Grow */
 .hvr-grow {
@@ -291,10 +289,37 @@ a.nav-link {
   .cards {
     grid-template-columns: repeat(4, 1fr); } }
 
+.headerAltura {
+  height: 20vh; }
+
+.mainAltura {
+  height: 78vh; }
+
+.footerAltura {
+  height: 22vh; }
+
 .medidasAbout {
-  width: 100%;
-  height: 700px;
-  object-fit: cover; }
+  margin-top: 20px; }
+
+@media (min-width: 768px) {
+  .headerAltura {
+    height: 30vh; }
+  .footerAltura {
+    height: 17vh; } }
+
+@media (min-width: 1440px) {
+  .headerAltura {
+    height: 30vh; }
+  .footerAltura {
+    height: 27vh; }
+  .mainAltura {
+    height: 93vh; } }
+
+@media (min-width: 2500px) {
+  .footerAltura {
+    height: 17vh; }
+  .mainAltura {
+    height: 88vh; } }
 
 body {
   margin: 0;

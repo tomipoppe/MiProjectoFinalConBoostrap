@@ -2,17 +2,11 @@
 .section-title {
     text-align: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 10px 0;
     font: 300 40px 'Oswald', sans-serif;
     color: $text;
     text-transform: uppercase;
     letter-spacing: 6px;
-}
-
-@media (min-width: 2560px) {
-    .section-title {
-        font: 300 95px 'Oswald', sans-serif;
-    }
 }
 
 // CAROUSEL 
@@ -28,7 +22,7 @@
 }
 
 /* Para laptop */
-@media (min-width: 1440px) {
+@media (min-width: 1400px) {
 
     .carousel {
         margin-top: 20px;
@@ -39,7 +33,7 @@
 
         .medidas {
             width: 100%;
-            height: 450px;
+            height: 380px;
         }
     }
 }
@@ -59,8 +53,11 @@
         width: 100%;
 
         .medidas {
-            height: 650px;
+            height: 750px;
         }
+    }
+    .section-title {
+        font: 300 95px 'Oswald', sans-serif;
     }
 }
 

@@ -1,5 +1,54 @@
-.medidasAbout{
-    width: 100%;
-    height: 700px;
-    object-fit: cover
+.headerAltura {
+    height: $altura-header;
+}
+
+.mainAltura {
+    height: 120vh - ($altura-header + $altura-footer);
+}
+
+.footerAltura {
+    height: $altura-footer;
+}
+
+
+
+.medidasAbout {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .headerAltura {
+        height: $altura-header + 10vh;
+    }
+
+    .footerAltura {
+        height: $altura-footer - 5vh;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    .headerAltura {
+        height: $altura-header + 10vh;
+    }
+
+    .footerAltura {
+        height: $altura-footer + 5vh;
+    }
+    
+
+    .mainAltura {
+        height: 135vh - ($altura-header + $altura-footer);
+    }
+}
+
+@media (min-width: 2500px) {
+    .footerAltura {
+        height: $altura-footer - 5vh;
+    }
+    
+
+    .mainAltura {
+        height: 130vh - ($altura-header + $altura-footer);
+    }
 }
