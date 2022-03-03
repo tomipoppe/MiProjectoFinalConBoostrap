@@ -10,8 +10,6 @@
     height: $altura-footer;
 }
 
-
-
 .medidasAbout {
     margin-top: 20px;
 }
@@ -43,11 +41,7 @@
 }
 
 @media (min-width: 2500px) {
-    .footerAltura {
-        height: $altura-footer - 5vh;
-    }
     
-
     .mainAltura {
         height: 130vh - ($altura-header + $altura-footer);
     }

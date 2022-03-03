@@ -316,8 +316,6 @@ a.nav-link {
     height: 93vh; } }
 
 @media (min-width: 2500px) {
-  .footerAltura {
-    height: 17vh; }
   .mainAltura {
     height: 88vh; } }
 
